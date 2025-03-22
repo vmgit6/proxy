@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/proxy', async (req, res) => {
-  const targetUrl = 'https://www.gadgets360.com/home-appliances/air-conditioners-price-list/';
+  const targetUrl = 'https://www.gadgets360.com/entertainment/features/new-ott-releases-this-week-on-netflix-prime-video-disney-hotstar-jiocinema-sonyliv-march-17-march-23-7967080';
 
   try {
     const response = await axios.get(targetUrl);

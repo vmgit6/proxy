@@ -10,7 +10,97 @@ app.get('/', (req, res) => {
   res.send('Lost?');
 });
 
-app.get('/proxy', async (req, res) => {
+app.get('/proxy1', async (req, res) => {
+  const targetUrl = 'https://www.gadgets360.com/entertainment/features/new-ott-releases-this-week-on-netflix-prime-video-disney-hotstar-jiocinema-sonyliv-march-17-march-23-7967080';
+
+  try {
+    const response = await axios.get(targetUrl);
+
+    res.removeHeader('Content-Security-Policy');
+    res.removeHeader('X-Frame-Options');
+
+    res.set('Content-Type', 'text/html');
+
+    res.send(response.data);
+  } catch (error) {
+    console.error('Error fetching content:', error);
+    res.status(500).send('Error fetching content from the target URL');
+  }
+});
+
+app.get('/proxy2', async (req, res) => {
+  const targetUrl = 'https://www.gadgets360.com/entertainment/features/new-ott-releases-this-week-on-netflix-prime-video-disney-hotstar-jiocinema-sonyliv-march-17-march-23-7967080';
+
+  try {
+    const response = await axios.get(targetUrl);
+
+    res.removeHeader('Content-Security-Policy');
+    res.removeHeader('X-Frame-Options');
+
+    res.set('Content-Type', 'text/html');
+
+    res.send(response.data);
+  } catch (error) {
+    console.error('Error fetching content:', error);
+    res.status(500).send('Error fetching content from the target URL');
+  }
+});
+
+app.get('/proxy3', async (req, res) => {
+  const targetUrl = 'https://www.gadgets360.com/entertainment/features/new-ott-releases-this-week-on-netflix-prime-video-disney-hotstar-jiocinema-sonyliv-march-17-march-23-7967080';
+
+  try {
+    const response = await axios.get(targetUrl);
+
+    res.removeHeader('Content-Security-Policy');
+    res.removeHeader('X-Frame-Options');
+
+    res.set('Content-Type', 'text/html');
+
+    res.send(response.data);
+  } catch (error) {
+    console.error('Error fetching content:', error);
+    res.status(500).send('Error fetching content from the target URL');
+  }
+});
+
+app.get('/proxy4', async (req, res) => {
+  const targetUrl = 'https://www.gadgets360.com/entertainment/features/new-ott-releases-this-week-on-netflix-prime-video-disney-hotstar-jiocinema-sonyliv-march-17-march-23-7967080';
+
+  try {
+    const response = await axios.get(targetUrl);
+
+    res.removeHeader('Content-Security-Policy');
+    res.removeHeader('X-Frame-Options');
+
+    res.set('Content-Type', 'text/html');
+
+    res.send(response.data);
+  } catch (error) {
+    console.error('Error fetching content:', error);
+    res.status(500).send('Error fetching content from the target URL');
+  }
+});
+
+app.get('/proxy5', async (req, res) => {
+  const targetUrl = 'https://www.gadgets360.com/entertainment/features/new-ott-releases-this-week-on-netflix-prime-video-disney-hotstar-jiocinema-sonyliv-march-17-march-23-7967080';
+
+  try {
+    const response = await axios.get(targetUrl);
+
+    res.removeHeader('Content-Security-Policy');
+    res.removeHeader('X-Frame-Options');
+
+    res.set('Content-Type', 'text/html');
+
+    res.send(response.data);
+  } catch (error) {
+    console.error('Error fetching content:', error);
+    res.status(500).send('Error fetching content from the target URL');
+  }
+});
+
+app.get('/proxy6', async (req, res) => {
   const targetUrl = 'https://www.gadgets360.com/entertainment/features/new-ott-releases-this-week-on-netflix-prime-video-disney-hotstar-jiocinema-sonyliv-march-17-march-23-7967080';
 
   try {
